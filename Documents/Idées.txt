@@ -1,0 +1,9 @@
+Favoris et vues : 
+	afficher le compteur pour tous les inscrits, car si un potentiel acheteur voit que le biens qu'il 
+	souhaite a déjà été 6 fois mis en favoris cela peut l'insité a acheter et a faire une offre pour la maison. 
+	Cela ne peut etre que benéfique pour le vendeur.
+
+Profil:
+	Favoris dans le profil (en dessous des infos)
+	Bouton contact
+	Voir l'agent qui m'a été attribué : lien voir les agents
