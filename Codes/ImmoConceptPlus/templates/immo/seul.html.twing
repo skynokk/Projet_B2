@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+ {% block stylesheets %}<link rel="stylesheet" href="{{ asset('index.css') }}">
+ {% endblock %}
+{% block body %}
+<img src="http://www.gagnerunemaison.fr/wp-content/uploads/2012/01/la_maison_champignon.jpg" class="image">
+    <br>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div>
+        
+    </div>
+{% endblock %}

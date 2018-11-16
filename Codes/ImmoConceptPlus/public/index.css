@@ -1,0 +1,31 @@
+.conteneur1{
+    margin-top: 2%;
+    width: 30%;
+    float: left;
+    margin-left: 35px;
+}
+.conteneur{
+    margin-top: 15px;
+    margin-left: 1%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 30px;
+    width: 30px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.carousel-inner {
+    width: 39%;
+}
+#info{
+    width: 100%;
+}
+.image{
+    height: 200px;
+    width: 200px;
+    background: red;
+}
