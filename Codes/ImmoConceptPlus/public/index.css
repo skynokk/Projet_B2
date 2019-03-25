@@ -25,7 +25,26 @@
     width: 100%;
 }
 .image{
+    margin-left: 1%;
+    margin-top: 2%;
     height: 200px;
     width: 200px;
     background: red;
+    margin-bottom: 2%;
+}
+.cc{
+    margin-left: 1%;
+    position: absolute;
+    margin-top: 10%;
+    height: 60px;
+    width: 60px;
+    border: none;
+}
+.form1{
+    margin-top: 2%;
+    float: right;
+    margin-right: 20%;
+}
+.cc:focus{
+    outline:  none;
 }

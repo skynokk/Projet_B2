@@ -30,4 +30,10 @@ class ImmoController extends AbstractController
     public function show(){
         return $this->render('immo/seul.html.twing');
     }
+    /**
+     * @Route("/profile",name"profile")
+     */
+    public function profile(){
+        return $this->render('immo/profile.html.twig');
+    }
 }
