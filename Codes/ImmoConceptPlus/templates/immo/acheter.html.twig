@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('index.css') }}">{% endblock %}
+
+{% block body %}
+    {% for cataloge in cataloges %}
+            <div class="conteneur1">
+                <div class="card mb-3
+                    <h3 class="card-header">{{cataloge.Nom}} T{{cataloge.nbPieces}}</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Prix de vente : </h5>
+                        <h6 class="card-subtitle text-muted">{{cataloge.prixMiseEnVente }}€</h6>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src={{cataloge.photos[0].chemin}} alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">{{cataloge.description}}</p>
+                    </div>
+                    <a href="{{path('show',{'id':cataloge.id})}}" class="btn btn-warning" id="info">PLUS D'INFO</a>
+                </div>
+            </div>
+    {% endfor %}
+{% endblock %}
