@@ -1,0 +1,39 @@
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Login.css') }}" />{% endblock %} {% block
+body %}
+
+<body>
+	<div class="box">
+		<h1>Connexion</h1>
+
+		<form action="{{ path('security_login') }}" method="post">
+			<div class="form-group">
+				<input
+					placeholder="Login"
+					required
+					name="_username"
+					type="text"
+					class="form-control"
+				/>
+			</div>
+			<div class="form-group">
+				<input
+					placeholder="Mot de passe"
+					required
+					name="_password"
+					type="password"
+					class="form-control"
+				/>
+			</div>
+			<div class="form-group">
+				<input type="submit" name="" value="Connexion" />
+			</div>
+		</form>
+
+		<a href="/"
+			><img src="{{ asset('images/Fleche.png') }}" alt="Retour" class="felches"
+		/></a>
+	</div>
+</body>
+
+{% endblock %}

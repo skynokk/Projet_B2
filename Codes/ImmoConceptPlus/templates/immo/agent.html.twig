@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('index.css') }}">
+{% endblock %}
+
+{% block body %}
+
+{% if not app.user %}
+<div class="info1">
+	Vous devez être connecter pour pouvoir accéder à cette page
+</div>
+
+{% elseif information.agent != 1 %}
+<div class="info1">
+	Vous ne pouvez pas acceder à cet agent
+</div>
+
+{% else %}}
+<h1 class="titreprofil">Agent {{information.nom}}</h1>
+
+<div class="information_agent">
+
+	Login : {{information.username}}<br>
+	Prénom : {{information.prenom}}<br>
+	Nom : {{information.nom}}<br>
+	Sexe : {{information.sexe}}<br>
+	Mail : {{information.mail}}<br>
+	Téléphone : Non renseigné<br><br>
+	<a href="/">Modifier le mot de passe</a><br>
+</div>
+{% endif %}
+
+{% endblock %}
